@@ -1,6 +1,3 @@
-package pl.edu.uj.lab3;
-
-
 public class Polibiusz implements Algorithm {
 
 	static final char[][] alphabet = { { 'A', 'B', 'C', 'D', 'E' },
