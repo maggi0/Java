@@ -1,5 +1,3 @@
-package pl.edu.uj.lab3;
-
 public class ROT11 implements Algorithm{
 	
 	static final int rot = 11;
