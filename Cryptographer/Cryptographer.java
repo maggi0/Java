@@ -1,5 +1,3 @@
-package pl.edu.uj.lab3;
-
 import java.io.*;
 
 public class Cryptographer{
