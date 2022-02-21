@@ -1,5 +1,3 @@
-package pl.edu.uj.lab4;
-
 import java.io.*;
 
 public class Main {
@@ -7,26 +5,29 @@ public class Main {
 	public static void main(String[] args) {
 		
 		try {
-			MicroDVD.delay(args[0], args[1], Integer.parseInt(args[2]), Integer.parseInt(args[3]));
+			MicroDVD.delay(args[0], // input file 
+					args[1], // output file
+					Integer.parseInt(args[2]), // miliseconds 
+					Integer.parseInt(args[3])); // framerate
 		} 
 		catch (IndexOutOfBoundsException e) {
-			System.out.println("Niepoprawna iloœæ argumentów programu");
+			System.out.println("Invalid arguments number");
 		} 
 		catch (NumberFormatException e) {
-			System.out.println("Niepoprawny format argumentów");
+			System.out.println("Invalid arguments format");
 		} 
 		catch (IOException e) {
-			System.out.println("Niepoprawne wejœcie/wyjœcie");
+			System.out.println("Invalid Input/Output");
 		} 
 		catch (FirstNumberHigherException e) {
-			System.out.println("Niepoprawna sekwencja klatek.");
+			System.out.println("Invalid frame sequence");
 		}
 		catch (InvalidCharacterException e) {
-			System.out.println("Niepoprawne znaki");
+			System.out.println("Invalid characters");
 		}
 		catch(Exception e)
 		{
-			System.out.println("Nieznany typ wyjatku");
+			System.out.println("Unknown exception");
 		}
 	}
 }
