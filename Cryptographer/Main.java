@@ -3,8 +3,8 @@ import java.io.*;
 public class Main {
 	public static void main(String[] args) throws IOException{
 		
-		FileInputStream istream = new FileInputStream(args[0]);
-		FileInputStream ostream = new FileInputStream(args[1]);
+		FileInputStream istream = new FileInputStream(args[0]); // input file
+		FileInputStream ostream = new FileInputStream(args[1]); // output file
 		BufferedReader br_i = new BufferedReader(new InputStreamReader(istream));
 		BufferedReader br_o = new BufferedReader(new InputStreamReader(ostream));
 		
